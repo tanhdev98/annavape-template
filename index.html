@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Vape Pod</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./favicon/favicon-30x30.png" type="favicon-30x30">
+    <link rel="icon" href="./favicon/favicon-60x60.png" type="favicon-60x60">
+
+    <!-- flickity v2.2 -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body class="bg-black">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="text-center">
+                <small class="text-light text-small">Cảnh báo: Các sản phẩm có trên annavape.com giới hạn độ tuổi và chỉ
+                    dành cho người lớn trong độ tuổi hút thuốc hợp pháp.</small>
+            </div>
+        </div>
+        <hr class="mb-0 mt-1">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-top py-3">
+                <div class="col-4 text-start">
+                    <a class="text-pink me-2" href="https://www.facebook.com/AnnaVapePod" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a class="text-pink" href="tel:0901672530"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="/" class="header__logo">
+                        <img src="./img/logo.png" class="img-fluid" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-4 text-end">
+                    <form action="" class="header__search-form">
+                        <div class="header__search-wrap me-2">
+                            <label for="txtSearch"></label>
+                            <input type="text" id="txtSearch" class="form-control" placeholder="Nhập tên sản phẩm...">
+                            <span id="btnSearch" class="header__search-button">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                    <a href="#" role="button" class="text-pink header__cart-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="header__cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-0">
+        <!-- Menu -->
+        <div class="bg-black d-flex justify-content-center align-items-center header__menu">
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">vape</a>
+            </div>
+            <div class="header__menu-wrap header__dropdown">
+                <a class="header__dropdown-button">pod</a>
+                <div class="header__dropdown-content">
+                    <a href="#">pod dùng 1 lần</a>
+                    <a href="#">máy pod</a>
+                </div>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">tinh dầu</a>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">phụ kiện</a>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">sản phẩm 99%</a>
+            </div>
+        </div>
+    </header>
+    <!-- Slider -->
+    <section class="text-center">
+        <div class="main__carousel pt-2">
+            <div class="main__carousel-cell col-9 col-md-8 col-lg-5 text-center">
+                <a href="#" class="d-block mb-3">
+                    <img width="800" height="420" src="./img/index_slider_img_1.webp" alt="" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="main__carousel-cell col-9 col-md-8 col-lg-5 text-center">
+                <a href="#" class="d-block mb-3">
+                    <img width="800" height="420" src="./img/index_slider_img_4.webp" alt="" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="main__carousel-cell col-9 col-md-8 col-lg-5 text-center">
+                <a href="#" class="d-block mb-3">
+                    <img width="800" height="420" src="./img/index_slider_img_3.webp" alt="" class="img-fluid rounded">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Content -->
+    <section>
+        <div class="container">
+            <div class="category__title">
+                <h3 class="category__title-content">
+                    Sản phẩm mới
+                </h3>
+            </div>
+            <ul class="row category__main">
+                <!-- 1 row -->
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-sale"></div>
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price category__main-price-sale">
+                                <span>250.000đ</span>
+                                <span>180.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-hot"></div>
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <!-- 1 row -->
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-sale"></div>
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price category__main-price-sale">
+                                <span>250.000đ</span>
+                                <span>180.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-hot"></div>
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section">
+        <div class="container">
+            <div class="category__title">
+                <h3 class="category__title-content">
+                    Vape
+                </h3>
+                <a href="" class="category__title-content-view">Xem thêm <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <ul class="row category__main">
+                <!-- 1 row -->
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-sale"></div>
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price category__main-price-sale">
+                                <span>250.000đ</span>
+                                <span>180.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-hot"></div>
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="col-md-4 col-lg-3">
+                    <a href="" class="category__main-content">
+                        <div class="category__main-body">
+                            <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                class="img-fluid rounded">
+                            <span class="category__main-view">Xem chi tiết</span>
+                        </div>
+                        <div class="category__main-footer">
+                            <p class="text-light fw-bold category__main-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                fugit id facilis soluta, harum, assumenda nobis unde?
+                            </p>
+                            <p class="text-light category__main-price">
+                                <span>250.000đ</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="category__title">
+                    <h3 class="category__title-content">
+                        Pod
+                    </h3>
+                    <a href="" class="category__title-content-view">Xem thêm <i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+                <ul class="row category__main">
+                    <!-- 1 row -->
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-sale"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price category__main-price-sale">
+                                    <span>250.000đ</span>
+                                    <span>180.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-hot"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="category__title">
+                    <h3 class="category__title-content">
+                        Tinh dầu
+                    </h3>
+                    <a href="" class="category__title-content-view">Xem thêm <i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+                <ul class="row category__main">
+                    <!-- 1 row -->
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-sale"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price category__main-price-sale">
+                                    <span>250.000đ</span>
+                                    <span>180.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-hot"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="category__title">
+                    <h3 class="category__title-content">
+                        Phụ kiện
+                    </h3>
+                    <a href="" class="category__title-content-view">Xem thêm <i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+                <ul class="row category__main">
+                    <!-- 1 row -->
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-sale"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price category__main-price-sale">
+                                    <span>250.000đ</span>
+                                    <span>180.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-hot"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="category__title">
+                    <h3 class="category__title-content">
+                        Sản phẩm 99%
+                    </h3>
+                    <a href="" class="category__title-content-view">Xem thêm <i
+                            class="fas fa-angle-double-right"></i></a>
+                </div>
+                <ul class="row category__main">
+                    <!-- 1 row -->
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-sale"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price category__main-price-sale">
+                                    <span>250.000đ</span>
+                                    <span>180.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-hot"></div>
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="col-md-4 col-lg-3">
+                        <a href="" class="category__main-content">
+                            <div class="category__main-body">
+                                <img width="306" height="306" src="./img/product-demo.png" alt="Product Thumbnail"
+                                    class="img-fluid rounded">
+                                <span class="category__main-view">Xem chi tiết</span>
+                            </div>
+                            <div class="category__main-footer">
+                                <p class="text-light fw-bold category__main-title">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quod porro? Dolore, a.
+                                    Quas aliquam quibusdam accusamus repellendus, architecto voluptatem dolores voluptas
+                                    fugit id facilis soluta, harum, assumenda nobis unde?
+                                </p>
+                                <p class="text-light category__main-price">
+                                    <span>250.000đ</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <hr class="mb-0">
+            <div class="container text-center">
+                <small>
+                    Copyright © 2022 All right Reserved Design by annavape.com
+                </small>
+            </div>
+        </footer>
+        <!-- jquery 3.6.0 -->
+        <script src="./js/jquery-3.6.0.js"></script>
+        <!-- bootstrap 5 -->
+        <script src="./js/bootstrap.min.js"></script>
+        <!-- flickity v2.2 js -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script>
+            $('.main__carousel').flickity({
+                // options
+                cellAlign: "center",
+                contain: true,
+                prevNextButtons: false,
+                pageDots: false,
+                wrapAround: true,
+                autoPlay: 5000,
+                imagesLoaded: true
+            });
+            $(document).ready(function () {
+                const input = $('#txtSearch');
+                const btn = $('#btnSearch');
+
+                btn.on('click', function () {
+                    $(this).css('color', '#050100');
+                    if (input.hasClass('active')) {
+                        input.removeClass('active');
+                        // $(this).css('color', '#CB235D');
+                        $(this).css('color', '#fff');
+                    } else input.addClass('active');
+                });
+
+                const menu = $('.header__menu');
+                let sticky = menu.offset().top + 1;
+                $(window).on('scroll', function () {
+                    sticky_menu(menu, sticky);
+                });
+            });
+
+            function sticky_menu(menu, sticky) {
+                if ($(window).scrollTop() >= sticky) menu.addClass('sticky');
+                else menu.removeClass('sticky');
+            }
+        </script>
+</body>
+
+</html>
