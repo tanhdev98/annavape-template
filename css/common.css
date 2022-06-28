@@ -22,7 +22,7 @@
 }
 
 .header__logo>img {
-    width: 150px;
+    width: 250px;
 }
 
 .header__search-form {
@@ -65,6 +65,22 @@
     top: 5px;
 }
 
+.header__cart-count {
+    position: absolute;
+    font-size: 14px;
+    top: -7px;
+    left: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: red;
+    padding: 1px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 17px;
+}
+
 header hr {
     background: #fff;
 }
@@ -74,7 +90,7 @@ header hr {
     color: var(--brand-pink);
     padding: 5px 15px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     transition: opacity .25s linear, color .25s cubic-bezier(.215, .61, .355, 1);
 }
 
@@ -109,7 +125,7 @@ header hr {
     background: var(--brand-black);
     padding: 20px;
     border-radius: 0 0 5px 5px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: capitalize;
     z-index: 99;
 }
@@ -167,6 +183,7 @@ header hr {
     padding: 10px;
     position: relative;
     user-select: none;
+    font-weight: bold;
 }
 
 .category__title .category__title-content::after {
@@ -176,7 +193,7 @@ header hr {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 44px 25px;
+    border-width: 0 0 45px 25px;
     border-color: var(--brand-pink) transparent transparent var(--brand-pink);
     top: 0px;
     right: -25px;
@@ -187,6 +204,7 @@ header hr {
     right: 0;
     top: 18px;
     font-weight: bold;
+    text-transform: uppercase;
     color: var(--brand-pink);
 }
 
@@ -201,6 +219,7 @@ header hr {
 
 .category__main>li {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .category__main-footer {
@@ -209,6 +228,8 @@ header hr {
 }
 
 .category__main-footer .category__main-title {
+    margin-bottom: 10px;
+    margin-top: 5px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -283,9 +304,11 @@ header hr {
 .category__main-body {
     position: relative;
     text-align: center;
+    max-height: 306px;
 }
 
 .category__main-view {
+    border-radius: 0 0 5px 5px;
     position: absolute;
     bottom: 0;
     left: 0;
