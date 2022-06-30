@@ -340,3 +340,139 @@ header hr {
 .category__main-content:hover .category__main-title {
     text-decoration: underline;
 }
+
+/* product detail */
+.main-detail {
+    margin-top: 60px;
+}
+
+/* left site */
+.product-preview {
+    position: relative;
+}
+
+.product-preview>img {
+    width: 100%;
+    padding: 25px;
+    box-shadow: 0px 2px 12px -2px #c9c9c9;
+    border-radius: 5px;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.product-thumblist {
+    position: relative;
+    max-width: 510px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.product-thumblist .slider-product {
+    width: 444px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    position: relative;
+    margin-left: 35px;
+}
+
+.product-thumblist .slider-product>img {
+    object-fit: cover;
+    max-width: 140px;
+    max-height: 185px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: .2s linear;
+    opacity: 0.75;
+    margin-right: 8px;
+    padding: 15px;
+}
+
+.product-thumblist .slider-product>img:hover {
+    opacity: 1;
+    border-color: #cb1f5d;
+}
+
+.btn-prev,
+.btn-next {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #eee;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    top: 40%;
+    z-index: 11;
+    transition: .2s linear;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+    transition: .2s linear;
+    color: #cb1f5d;
+    border-color: #cb1f5d;
+}
+
+.btn-prev {
+    padding-right: 3px;
+    left: 0;
+}
+
+.btn-next {
+    padding-left: 3px;
+    right: 0;
+}
+
+/* right site */
+.main-detail .product-name {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.product-detail-table {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.product-detail-table tr th {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0;
+    max-width: 70px;
+}
+
+.product-detail-table tr td {
+    padding: 5px 0;
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.main-detail .product-detail-table tr:first-child td {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+#product-color {
+    display: none;
+}
+
+.product-color-picker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}

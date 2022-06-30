@@ -85,8 +85,100 @@
     </header>
 
     <!-- Content -->
-    <section>
-
+    <section class="main-detail">
+        <div class="container">
+            <div class="row">
+                <!-- product preview -->
+                <div class="col-xl-6 left-site">
+                    <div class="product-preview-wrap">
+                        <div class="product-preview">
+                            <img id="featured" src="./img/pro1.jpg" alt="product-thumbnail">
+                        </div>
+                        <div class="product-thumblist">
+                            <div class="slider-product" id="slider">
+                                <img src="./img/pro1.jpg" alt="product-thumbnail" class="img-fluid thumbnail active">
+                                <img src="./img/pro2.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
+                                <img src="./img/pro3.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
+                                <img src="./img/pro4.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
+                                <img src="./img/pro5.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
+                            </div>
+                            <span class="btn-prev" id="slideLeft">
+                                <i class="fas fa-angle-left"></i>
+                            </span>
+                            <span class="btn-next" id="slideRight">
+                                <i class="fas fa-angle-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- product details -->
+                <div class="col-xl-6 right-site">
+                    <h1 class="product-name">OXVA XLim 25w Pod Kit Chính Hãng</h1>
+                    <table class="product-detail-table">
+                        <tr>
+                            <th>Đơn giá:</th>
+                            <td><span id="price">650.000</span>đ</td>
+                        </tr>
+                        <tr>
+                            <th>Màu sắc:</th>
+                            <td>
+                                <select id="product-color">
+                                    <option value="#ff001e"></option>
+                                    <option value="#ff009d"></option>
+                                    <option value="#00ddff"></option>
+                                    <option value="#09eb2f"></option>
+                                </select>
+                                <div class="product-color-picker" style="background: #ff001e;"></div>
+                                <div class="product-color-picker" style="background: #ff009d;"></div>
+                                <div class="product-color-picker" style="background: #00ddff;"></div>
+                                <div class="product-color-picker" style="background: #09eb2f;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Số lượng</th>
+                            <td class="quantity">
+                                <span class="fas fa-minus" id="minus-quantity"></span>
+                                <input type="number" class="form-control" name="" id="input-quantity" value="1">
+                                <span class="fas fa-plus" id="plus-quantity"></span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="button-wrap mt-3">
+                        <a class="btn btn-submit">
+                            <i class="fas fa-cart-plus"></i>
+                            THÊM VÀO GIỎ HÀNG
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs product descriptions, specifications-->
+            <!-- <div class="row">
+                <div class="tabs-product">
+                    <ul>
+                        <li>
+                            <label for="tab1" role="button">
+                                <span>Mô tả</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <div class="content">
+                        <section>
+                            <h1>Lorem ipsum dolor sit amet.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus voluptatem
+                                debitis? Repellendus placeat maiores repellat, voluptatem, sequi debitis provident
+                                quaerat blanditiis cupiditate, atque alias et ea corrupti incidunt ratione!</p>
+                            <img src="./img/pro1.jpg">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam soluta laborum,
+                                facilis quaerat accusamus eum exercitationem delectus eos hic? Unde rem ex voluptatem
+                                animi, vero in corporis voluptas quos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam soluta laborum,
+                                facilis quaerat accusamus eum exercitationem delectus eos hic? Unde rem ex voluptatem
+                                animi, vero in corporis voluptas quos.</p>
+                        </section>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </section>
 
     <!-- Footer -->
@@ -104,31 +196,33 @@
     <script src="./js/bootstrap.min.js"></script>
     <!-- flickity v2.2 js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- common js -->
+    <script src="./js/common.js"></script>
     <script>
-        $(document).ready(function () {
-            const input = $('#txtSearch');
-            const btn = $('#btnSearch');
-
-            btn.on('click', function () {
-                $(this).css('color', '#050100');
-                if (input.hasClass('active')) {
-                    input.removeClass('active');
-                    // $(this).css('color', '#CB235D');
-                    $(this).css('color', '#fff');
-                } else input.addClass('active');
+        // Product preview
+        let thumbnails = document.getElementsByClassName('thumbnail');
+        let activeImages = document.getElementsByClassName('active');
+        for (var i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('click', function () {
+                if (activeImages.length > 0) {
+                    activeImages[0].classList.remove('active');
+                }
+                this.classList.add('active');
+                document.getElementById('featured').src = this.src;
             });
+        }
 
-            const menu = $('.header__menu');
-            let sticky = menu.offset().top + 1;
-            $(window).on('scroll', function () {
-                sticky_menu(menu, sticky);
-            });
+        // Button next, prev
+        let buttonRight = document.getElementById('slideRight');
+        let buttonLeft = document.getElementById('slideLeft');
+
+        buttonLeft.addEventListener('click', function () {
+            document.getElementById('slider').scrollLeft -= 202;
         });
 
-        function sticky_menu(menu, sticky) {
-            if ($(window).scrollTop() >= sticky) menu.addClass('sticky');
-            else menu.removeClass('sticky');
-        }
+        buttonRight.addEventListener('click', function () {
+            document.getElementById('slider').scrollLeft += 202;
+        });
     </script>
 </body>
 

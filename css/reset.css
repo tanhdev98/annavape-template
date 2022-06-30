@@ -210,7 +210,7 @@ button {
 }
 
 img {
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 div {

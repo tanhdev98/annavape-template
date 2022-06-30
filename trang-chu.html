@@ -583,6 +583,8 @@
     <script src="./js/bootstrap.min.js"></script>
     <!-- flickity v2.2 js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- common js -->
+    <script src="./js/common.js"></script>
     <script>
         $('.main__carousel').flickity({
             // options
@@ -594,30 +596,6 @@
             autoPlay: 5000,
             imagesLoaded: true
         });
-        $(document).ready(function () {
-            const input = $('#txtSearch');
-            const btn = $('#btnSearch');
-
-            btn.on('click', function () {
-                $(this).css('color', '#050100');
-                if (input.hasClass('active')) {
-                    input.removeClass('active');
-                    // $(this).css('color', '#CB235D');
-                    $(this).css('color', '#fff');
-                } else input.addClass('active');
-            });
-
-            const menu = $('.header__menu');
-            let sticky = menu.offset().top + 1;
-            $(window).on('scroll', function () {
-                sticky_menu(menu, sticky);
-            });
-        });
-
-        function sticky_menu(menu, sticky) {
-            if ($(window).scrollTop() >= sticky) menu.addClass('sticky');
-            else menu.removeClass('sticky');
-        }
     </script>
 </body>
 
