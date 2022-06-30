@@ -480,10 +480,11 @@ header hr {
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .color-picker.active {
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     box-shadow: 0px 2px 12px -2px #c9c9c9;
 }
 
@@ -501,6 +502,9 @@ header hr {
     border-color: #cb1f5d;
     border-left: none;
     border-right: none;
+    font-size: 13px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
 
 .quantity #minus-quantity,

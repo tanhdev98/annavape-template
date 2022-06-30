@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <!-- product details -->
-                <div class="col-xl-6 right-site">
+                <div class="col-xl-6 mt-5 right-site">
                     <h1 class="product-name">OXVA XLim 25w Pod Kit Chính Hãng</h1>
                     <table class="product-detail-table">
                         <tr>
@@ -126,7 +126,7 @@
                                 <div class="color-picker" style="background: #ff009d;" data-hex="#ff009d"></div>
                                 <div class="color-picker" style="background: #00ddff;" data-hex="#00ddff"></div>
                                 <div class="color-picker" style="background: #09eb2f;" data-hex="#09eb2f"></div>
-                                <input type="text" hidden id="colors" value="">
+                                <input type="text" hidden id="colors">
                             </td>
                         </tr>
                         <tr>
@@ -204,11 +204,11 @@
         let buttonLeft = document.getElementById('slideLeft');
 
         buttonLeft.addEventListener('click', function () {
-            document.getElementById('slider').scrollLeft -= 202;
+            document.getElementById('slider').scrollLeft -= 148;
         });
 
         buttonRight.addEventListener('click', function () {
-            document.getElementById('slider').scrollLeft += 202;
+            document.getElementById('slider').scrollLeft += 148;
         });
 
         // Quantity input
@@ -235,6 +235,7 @@
             let hex = e.target.getAttribute("data-hex");
             $('.color-picker').removeClass('active');
             $(this).addClass('active');
+            $('#colors').val(hex);
         }
     </script>
 </body>
