@@ -122,16 +122,11 @@
                         <tr>
                             <th>Màu sắc:</th>
                             <td>
-                                <select id="product-color">
-                                    <option value="#ff001e"></option>
-                                    <option value="#ff009d"></option>
-                                    <option value="#00ddff"></option>
-                                    <option value="#09eb2f"></option>
-                                </select>
-                                <div class="product-color-picker" style="background: #ff001e;"></div>
-                                <div class="product-color-picker" style="background: #ff009d;"></div>
-                                <div class="product-color-picker" style="background: #00ddff;"></div>
-                                <div class="product-color-picker" style="background: #09eb2f;"></div>
+                                <div class="color-picker" style="background: #ff001e;" data-hex="#ff001e"></div>
+                                <div class="color-picker" style="background: #ff009d;" data-hex="#ff009d"></div>
+                                <div class="color-picker" style="background: #00ddff;" data-hex="#00ddff"></div>
+                                <div class="color-picker" style="background: #09eb2f;" data-hex="#09eb2f"></div>
+                                <input type="text" hidden id="colors" value="">
                             </td>
                         </tr>
                         <tr>
@@ -152,32 +147,24 @@
                 </div>
             </div>
             <!-- tabs product descriptions, specifications-->
-            <!-- <div class="row">
-                <div class="tabs-product">
-                    <ul>
-                        <li>
-                            <label for="tab1" role="button">
-                                <span>Mô tả</span>
-                            </label>
-                        </li>
-                    </ul>
-                    <div class="content">
-                        <section>
-                            <h1>Lorem ipsum dolor sit amet.</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus voluptatem
-                                debitis? Repellendus placeat maiores repellat, voluptatem, sequi debitis provident
-                                quaerat blanditiis cupiditate, atque alias et ea corrupti incidunt ratione!</p>
-                            <img src="./img/pro1.jpg">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam soluta laborum,
-                                facilis quaerat accusamus eum exercitationem delectus eos hic? Unde rem ex voluptatem
-                                animi, vero in corporis voluptas quos.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam soluta laborum,
-                                facilis quaerat accusamus eum exercitationem delectus eos hic? Unde rem ex voluptatem
-                                animi, vero in corporis voluptas quos.</p>
-                        </section>
-                    </div>
+            <div class="row">
+                <div class="describe">
+                    <span class="title">Mô tả</span>
+                    <section class="content">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus voluptatem
+                            debitis? Repellendus placeat maiores repellat, voluptatem, sequi debitis provident
+                            quaerat blanditiis cupiditate, atque alias et ea corrupti incidunt ratione!</p>
+                        <img src="./img/pro1.jpg">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam soluta laborum,
+                            facilis quaerat accusamus eum exercitationem delectus eos hic? Unde rem ex voluptatem
+                            animi, vero in corporis voluptas quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam soluta laborum,
+                            facilis quaerat accusamus eum exercitationem delectus eos hic? Unde rem ex voluptatem
+                            animi, vero in corporis voluptas quos.</p>
+                    </section>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 
@@ -223,6 +210,32 @@
         buttonRight.addEventListener('click', function () {
             document.getElementById('slider').scrollLeft += 202;
         });
+
+        // Quantity input
+        var inputQuantity = $("#input-quantity");
+        var btnPlus = $("#plus-quantity");
+        var btnMinus = $("#minus-quantity");
+
+        $(btnPlus).click(function () {
+            var a = $(inputQuantity).val();
+            0 == isNaN(a) ? $(inputQuantity).val(parseInt(a) + 1) : $(inputQuantity).val(1)
+        });
+        $(btnMinus).click(function () {
+            var a = $(inputQuantity).val();
+            0 == isNaN(a) && parseInt(a) > 1 ? $(inputQuantity).val(parseInt(a) - 1) : $(inputQuantity).val(1)
+        });
+
+        // Color pick
+        let el = $('.color-picker');
+        for (let i = 0; i < el.length; i++) {
+            el[i].onclick = changeColor;
+        }
+
+        function changeColor(e) {
+            let hex = e.target.getAttribute("data-hex");
+            $('.color-picker').removeClass('active');
+            $(this).addClass('active');
+        }
     </script>
 </body>
 
