@@ -50,7 +50,7 @@
 
 .header__search-wrap .header__search-button {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
     color: var(--brand-pink);
     cursor: pointer;
@@ -62,7 +62,7 @@
 
 .header__cart-button {
     position: relative;
-    top: 5px;
+    top: 10px;
 }
 
 .header__cart-count {
@@ -352,9 +352,7 @@ header hr {
 }
 
 .product-preview>img {
-    width: 100%;
     padding: 25px;
-    box-shadow: 0px 2px 12px -2px #c9c9c9;
     border-radius: 5px;
     width: 500px;
     height: 500px;
@@ -386,7 +384,7 @@ header hr {
     max-width: 140px;
     max-height: 185px;
     cursor: pointer;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     border-radius: 5px;
     transition: .2s linear;
     opacity: 0.75;
@@ -439,6 +437,8 @@ header hr {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
 }
 
 .product-detail-table {
@@ -451,6 +451,7 @@ header hr {
     font-weight: bold;
     margin-bottom: 0;
     max-width: 70px;
+    padding: 30px 0;
 }
 
 .product-detail-table tr td {
@@ -458,6 +459,7 @@ header hr {
     color: #fff;
     margin-bottom: 0;
     text-transform: uppercase;
+    height: 78px;
 }
 
 .main-detail .product-detail-table tr:first-child td {
@@ -467,7 +469,7 @@ header hr {
 }
 
 #price {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 #product-color {
@@ -499,7 +501,7 @@ header hr {
     width: 50px;
     border-radius: 0;
     text-align: center;
-    border-color: #cb1f5d;
+    border-color: #000;
     border-left: none;
     border-right: none;
     font-size: 13px;
@@ -513,8 +515,8 @@ header hr {
     height: 30px;
     width: 30px;
     cursor: pointer;
-    border: 1px solid #cb1f5d;
-    color: #cb1f5d;
+    border: 1px solid #000;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,6 +532,64 @@ header hr {
 
 .quantity #minus-quantity:hover,
 .quantity #plus-quantity:hover {
-    background: #cb1f5d;
+    border: 1px solid #fff;
+    background: #000;
     color: #fff;
+}
+
+.btn-submit {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+.right-site .button-wrap {
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
+
+/* mô tả */
+
+.describe {
+    color: #fff;
+    margin-top: 50px;
+}
+
+.describe .title-wrap {
+    border-bottom: 1px solid #ddd;
+}
+
+.describe .title-wrap .title {
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 3px solid #fff;
+    margin-bottom: -1px;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+
+#main-content {
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+
+#main-content img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
 }

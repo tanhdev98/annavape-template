@@ -148,6 +148,7 @@ a {
 }
 
 a:hover {
+	color: #ddd;
 	text-decoration: none;
 }
 
@@ -218,7 +219,7 @@ div {
 }
 
 small {
-	/* color: red; */
+	color: #fff;
 	font-size: 13px;
 	font-weight: 600;
 	vertical-align: top;

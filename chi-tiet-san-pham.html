@@ -21,7 +21,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="text-center">
+            <div class="text-center mt-1">
                 <small class="text-light text-small">Cảnh báo: Các sản phẩm có trên annavape.com giới hạn độ tuổi và chỉ
                     dành cho người lớn trong độ tuổi hút thuốc hợp pháp.</small>
             </div>
@@ -116,17 +116,40 @@
                     <h1 class="product-name">OXVA XLim 25w Pod Kit Chính Hãng</h1>
                     <table class="product-detail-table">
                         <tr>
-                            <th>Đơn giá:</th>
-                            <td><span id="price">650.000</span>đ</td>
+                            <th>Đơn giá</th>
+                            <td><span id="price">650.000</span> vnđ</td>
                         </tr>
                         <tr>
-                            <th>Màu sắc:</th>
+                            <th>Xuất xứ</th>
+                            <td>USA</td>
+                        </tr>
+                        <!-- Nếu type = vape, pod -->
+                        <tr>
+                            <th>Pin</th>
+                            <td>2100mAh</td>
+                        </tr>
+                        <tr>
+                            <th>Màu sắc</th>
                             <td>
-                                <div class="color-picker" style="background: #ff001e;" data-hex="#ff001e"></div>
-                                <div class="color-picker" style="background: #ff009d;" data-hex="#ff009d"></div>
-                                <div class="color-picker" style="background: #00ddff;" data-hex="#00ddff"></div>
-                                <div class="color-picker" style="background: #09eb2f;" data-hex="#09eb2f"></div>
-                                <input type="text" hidden id="colors">
+                                <select class="form-select">
+                                    <option value="">Đen đỏ</option>
+                                    <option value="">Vàng xanh</option>
+                                    <option value="">Đen trắng</option>
+                                    <option value="">Đen</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Nếu type = tinh dầu -->
+                        <tr>
+                            <th>Vị</th>
+                            <td>
+                                <select class="form-select">
+                                    <option value="">Táo Lạnh</option>
+                                    <option value="">Xoài Lạnh</option>
+                                    <option value="">Đào Lạnh</option>
+                                    <option value="">Coca Lạnh</option>
+                                    <option value="">Kem khoai môn</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
@@ -149,8 +172,10 @@
             <!-- tabs product descriptions, specifications-->
             <div class="row">
                 <div class="describe">
-                    <span class="title">Mô tả</span>
-                    <section class="content">
+                    <div class="title-wrap">
+                        <span class="title">Mô tả sản phẩm</span>
+                    </div>
+                    <section id="main-content">
                         <h1>Lorem ipsum dolor sit amet.</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem doloribus voluptatem
                             debitis? Repellendus placeat maiores repellat, voluptatem, sequi debitis provident
@@ -170,7 +195,6 @@
 
     <!-- Footer -->
     <footer>
-        <hr class="mb-0">
         <div class="container text-center">
             <small>
                 Copyright © 2022 All right Reserved Design by annavape.com
