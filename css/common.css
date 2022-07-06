@@ -7,6 +7,7 @@
 
 .bg-black {
     background: var(--brand-black);
+    color: #fff;
 }
 
 .bg-pink {
@@ -593,3 +594,93 @@ footer {
     border-top: 1px solid #eee;
     padding-top: 1rem;
 }
+
+/* pagination :: start */
+
+.pagination {
+    display: block;
+    height: 40px;
+}
+
+.pagination a {
+    color: #000;
+    background: #fff;
+    font-weight: 700;
+    float: left;
+    text-decoration: none;
+    width: 40px;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    border: transparent 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination a.arrow {
+    border-radius: 5px;
+}
+
+.pagination a.active,
+.pagination a:hover {
+    color: #fff !important;
+    background: #000;
+    border: 2px solid #fff;
+    transition: .2s all;
+}
+
+/* pagination :: end */
+
+/* cart :: start */
+
+.checkout-table {
+    margin-top: 30px;
+    border: 2px solid #fff;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.checkout-table tr:first-child th {
+    background: #fff;
+    color: #000;
+}
+
+.checkout-table tr th {
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.checkout-table tr td img {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    padding: 15px;
+}
+
+.checkout-table tr td {
+    vertical-align: center;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #fff;
+}
+
+.checkout-table tr td h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.info-admin {
+    padding-left: 20px;
+}
+
+.info-admin li {
+    margin-bottom: 10px;
+}
+
+
+/* cart :: end */

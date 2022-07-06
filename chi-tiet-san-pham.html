@@ -21,7 +21,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="text-center mt-1">
+            <div class="text-center">
                 <small class="text-light text-small">Cảnh báo: Các sản phẩm có trên annavape.com giới hạn độ tuổi và chỉ
                     dành cho người lớn trong độ tuổi hút thuốc hợp pháp.</small>
             </div>
@@ -97,10 +97,10 @@
                         <div class="product-thumblist">
                             <div class="slider-product" id="slider">
                                 <img src="./img/pro1.jpg" alt="product-thumbnail" class="img-fluid thumbnail active">
-                                <img src="./img/pro2.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
-                                <img src="./img/pro3.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
-                                <img src="./img/pro4.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
-                                <img src="./img/pro5.jpg" alt="product-thumbnail" class="img-fluid thumbnail">
+                                <img src="./img/pro2.jpg" alt="yellow-green" class="img-fluid thumbnail">
+                                <img src="./img/pro3.jpg" alt="black-white" class="img-fluid thumbnail">
+                                <img src="./img/pro4.jpg" alt="black" class="img-fluid thumbnail">
+                                <img src="./img/pro5.jpg" alt="red-black" class="img-fluid thumbnail">
                             </div>
                             <span class="btn-prev" id="slideLeft">
                                 <i class="fas fa-angle-left"></i>
@@ -132,10 +132,10 @@
                             <th>Màu sắc</th>
                             <td>
                                 <select class="form-select">
-                                    <option value="">Đen đỏ</option>
-                                    <option value="">Vàng xanh</option>
-                                    <option value="">Đen trắng</option>
-                                    <option value="">Đen</option>
+                                    <option value="red-black">Đen đỏ</option>
+                                    <option value="yellow-green">Vàng xanh</option>
+                                    <option value="black-white">Đen trắng</option>
+                                    <option value="black">Đen</option>
                                 </select>
                             </td>
                         </tr>
@@ -195,6 +195,7 @@
 
     <!-- Footer -->
     <footer>
+        <hr class="mb-0">
         <div class="container text-center">
             <small>
                 Copyright © 2022 All right Reserved Design by annavape.com
@@ -207,59 +208,30 @@
     <script src="./js/bootstrap.min.js"></script>
     <!-- flickity v2.2 js -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!-- common js -->
-    <script src="./js/common.js"></script>
     <script>
-        // Product preview
-        let thumbnails = document.getElementsByClassName('thumbnail');
-        let activeImages = document.getElementsByClassName('active');
-        for (var i = 0; i < thumbnails.length; i++) {
-            thumbnails[i].addEventListener('click', function () {
-                if (activeImages.length > 0) {
-                    activeImages[0].classList.remove('active');
-                }
-                this.classList.add('active');
-                document.getElementById('featured').src = this.src;
+        $(document).ready(function () {
+            const input = $('#txtSearch');
+            const btn = $('#btnSearch');
+
+            btn.on('click', function () {
+                $(this).css('color', '#050100');
+                if (input.hasClass('active')) {
+                    input.removeClass('active');
+                    // $(this).css('color', '#CB235D');
+                    $(this).css('color', '#fff');
+                } else input.addClass('active');
             });
-        }
 
-        // Button next, prev
-        let buttonRight = document.getElementById('slideRight');
-        let buttonLeft = document.getElementById('slideLeft');
-
-        buttonLeft.addEventListener('click', function () {
-            document.getElementById('slider').scrollLeft -= 148;
+            const menu = $('.header__menu');
+            let sticky = menu.offset().top + 1;
+            $(window).on('scroll', function () {
+                sticky_menu(menu, sticky);
+            });
         });
 
-        buttonRight.addEventListener('click', function () {
-            document.getElementById('slider').scrollLeft += 148;
-        });
-
-        // Quantity input
-        var inputQuantity = $("#input-quantity");
-        var btnPlus = $("#plus-quantity");
-        var btnMinus = $("#minus-quantity");
-
-        $(btnPlus).click(function () {
-            var a = $(inputQuantity).val();
-            0 == isNaN(a) ? $(inputQuantity).val(parseInt(a) + 1) : $(inputQuantity).val(1)
-        });
-        $(btnMinus).click(function () {
-            var a = $(inputQuantity).val();
-            0 == isNaN(a) && parseInt(a) > 1 ? $(inputQuantity).val(parseInt(a) - 1) : $(inputQuantity).val(1)
-        });
-
-        // Color pick
-        let el = $('.color-picker');
-        for (let i = 0; i < el.length; i++) {
-            el[i].onclick = changeColor;
-        }
-
-        function changeColor(e) {
-            let hex = e.target.getAttribute("data-hex");
-            $('.color-picker').removeClass('active');
-            $(this).addClass('active');
-            $('#colors').val(hex);
+        function sticky_menu(menu, sticky) {
+            if ($(window).scrollTop() >= sticky) menu.addClass('sticky');
+            else menu.removeClass('sticky');
         }
     </script>
 </body>
