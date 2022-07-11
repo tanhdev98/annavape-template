@@ -674,12 +674,25 @@ footer {
     margin-bottom: 10px;
 }
 
+.info-form{
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
 .info-admin {
     padding-left: 20px;
 }
 
 .info-admin li {
     margin-bottom: 10px;
+}
+
+.info-admin li h2{
+    font-size: 18px;
+}
+
+.info-admin li small a{
+    font-weight: 700;
 }
 
 
