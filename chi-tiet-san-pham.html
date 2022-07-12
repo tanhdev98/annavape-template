@@ -233,6 +233,40 @@
             if ($(window).scrollTop() >= sticky) menu.addClass('sticky');
             else menu.removeClass('sticky');
         }
+
+        // Product preview
+        let thumbnails = document.getElementsByClassName('thumbnail');
+        let activeImages = document.getElementsByClassName('active');
+        for (var i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('click', function () {
+                if (activeImages.length > 0) {
+                    activeImages[0].classList.remove('active');
+                }
+                this.classList.add('active');
+                document.getElementById('featured').src = this.src;
+            });
+        }
+        // Button next, prev
+        let buttonRight = document.getElementById('slideRight');
+        let buttonLeft = document.getElementById('slideLeft');
+        buttonLeft.addEventListener('click', function () {
+            document.getElementById('slider').scrollLeft -= 148;
+        });
+        buttonRight.addEventListener('click', function () {
+            document.getElementById('slider').scrollLeft += 148;
+        });
+        // Quantity input
+        var inputQuantity = $("#input-quantity");
+        var btnPlus = $("#plus-quantity");
+        var btnMinus = $("#minus-quantity");
+        $(btnPlus).click(function () {
+            var a = $(inputQuantity).val();
+            0 == isNaN(a) ? $(inputQuantity).val(parseInt(a) + 1) : $(inputQuantity).val(1)
+        });
+        $(btnMinus).click(function () {
+            var a = $(inputQuantity).val();
+            0 == isNaN(a) && parseInt(a) > 1 ? $(inputQuantity).val(parseInt(a) - 1) : $(inputQuantity).val(1)
+        });
     </script>
 </body>
 
