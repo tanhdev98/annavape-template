@@ -603,7 +603,7 @@ footer {
 }
 
 .pagination a {
-    color: #000;
+    color: #000 !important;
     background: #fff;
     font-weight: 700;
     float: left;
@@ -674,7 +674,7 @@ footer {
     margin-bottom: 10px;
 }
 
-.info-form{
+.info-form {
     border: 2px solid #fff;
     padding: 20px;
 }
@@ -687,13 +687,32 @@ footer {
     margin-bottom: 10px;
 }
 
-.info-admin li h2{
+.info-admin li h2 {
     font-size: 18px;
 }
 
-.info-admin li small a{
+.info-admin li small a {
     font-weight: 700;
 }
 
-
 /* cart :: end */
+
+/* faq :: start */
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+.accordion-body {
+    color: #000;
+}
+
+/* faq :: end */

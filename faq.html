@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Vape Pod</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./favicon/favicon-30x30.png" type="favicon-30x30">
+    <link rel="icon" href="./favicon/favicon-60x60.png" type="favicon-60x60">
+
+    <!-- flickity v2.2 -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body class="bg-black">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="text-center">
+                <small class="text-light text-small">Cảnh báo: Các sản phẩm có trên annavape.com giới hạn độ tuổi và chỉ
+                    dành cho người lớn trong độ tuổi hút thuốc hợp pháp.</small>
+            </div>
+        </div>
+        <hr class="mb-0 mt-1">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-top py-3">
+                <div class="col-4 text-start">
+                    <a class="text-pink me-2" href="https://www.facebook.com/AnnaVapePod" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a class="text-pink" href="tel:0901672530"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="./trang-chu.html" class="header__logo">
+                        <img src="./img/logo.png" class="img-fluid" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-4 text-end">
+                    <form action="" class="header__search-form">
+                        <div class="header__search-wrap me-2">
+                            <label for="txtSearch"></label>
+                            <input type="text" id="txtSearch" class="form-control" placeholder="Nhập tên sản phẩm...">
+                            <span id="btnSearch" class="header__search-button">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                    <a href="#" role="button" class="text-pink header__cart-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="header__cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-0">
+        <!-- Menu -->
+        <div class="bg-black d-flex justify-content-center align-items-center header__menu">
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">vape</a>
+            </div>
+            <div class="header__menu-wrap header__dropdown">
+                <a class="header__dropdown-button">pod</a>
+                <div class="header__dropdown-content">
+                    <a href="#">pod dùng 1 lần</a>
+                    <a href="#">máy pod</a>
+                </div>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">tinh dầu</a>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">phụ kiện</a>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">sản phẩm 99%</a>
+            </div>
+            <div class="header__menu-wrap">
+                <a class="header__dropdown-button">faq</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section id="list-faq">
+        <div class="container">
+            <div class="category__title">
+                <h3 class="category__title-content">
+                    FAQ
+                </h3>
+            </div>
+            <div class="row">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is shown by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the , though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the , though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the , though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <hr class="mb-0">
+        <div class="container text-center">
+            <small>
+                Copyright © 2022 All right Reserved Design by annavape.com
+            </small>
+        </div>
+    </footer>
+    <!-- jquery 3.6.0 -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- flickity v2.2 js -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- common js -->
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
